@@ -1,0 +1,32 @@
+## Agent History
+
+Visited URLs: ['about:blank', 'https://www.google.com/search?q=what+is+browser+automation&udm=14']
+
+Screenshots: [None, 'C:\\Users\\kusha\\AppData\\Local\\Temp\\browser_use_agent_068d91a2-8f28-70ca-8000-115b830151c8_1759058472\\screenshots\\step_2.png']
+
+Actions: ['search', 'done']
+
+Extracted Content: ["Searched Google for 'what is browser automation'", "Here are the top 3 results for 'what is browser automation':\n\n1. **What is Browser Automation: Tutorial to Get Started**\n   URL: https://www.browserstack.com\n\n2. **What is Browser Automation? Full Guide for Beginners**\n   URL: https://www.browserless.io\n\n3. **What Is Browser Automation: A Complete Tutorial**\n   URL: https://www.lambdatest.com"]
+
+Errors: [None, None]
+
+Model Actions: [{'search': {'query': 'what is browser automation', 'search_engine': 'google'}, 'interacted_element': None}, {'done': {'text': "Here are the top 3 results for 'what is browser automation':\n\n1. **What is Browser Automation: Tutorial to Get Started**\n   URL: https://www.browserstack.com\n\n2. **What is Browser Automation? Full Guide for Beginners**\n   URL: https://www.browserless.io\n\n3. **What Is Browser Automation: A Complete Tutorial**\n   URL: https://www.lambdatest.com", 'success': True, 'files_to_display': []}, 'interacted_element': None}]
+
+Model Outputs: [AgentOutput(thinking="The user wants me to search Google for 'what is browser automation' and then extract the top 3 results. Since I'm starting from a blank page, I need to first use the search tool to perform the Google search.", evaluation_previous_goal='Agent initialized. Verdict: Success', memory="The task is to search for 'what is browser automation' and get the top 3 results.", next_goal="Perform a Google search for 'what is browser automation'.", action=[ActionModel(root=SearchActionModel(search=SearchAction(query='what is browser automation', search_engine='google')))]), AgentOutput(thinking="I have successfully searched for 'what is browser automation' on Google. Now I need to extract the top 3 results. I can see the search results in the browser state. I will extract the title and URL for the first three results.", evaluation_previous_goal="Successfully searched Google for 'what is browser automation'. Verdict: Success", memory="Performed a Google search for 'what is browser automation'. Now I need to extract the top 3 results.", next_goal='Extract the titles and URLs of the top 3 search results and then call done.', action=[ActionModel(root=DoneActionModel(done=DoneAction(text="Here are the top 3 results for 'what is browser automation':\n\n1. **What is Browser Automation: Tutorial to Get Started**\n   URL: https://www.browserstack.com\n\n2. **What is Browser Automation? Full Guide for Beginners**\n   URL: https://www.browserless.io\n\n3. **What Is Browser Automation: A Complete Tutorial**\n   URL: https://www.lambdatest.com", success=True, files_to_display=[])))])]
+
+Final Result: Here are the top 3 results for 'what is browser automation':
+
+1. **What is Browser Automation: Tutorial to Get Started**
+   URL: https://www.browserstack.com
+
+2. **What is Browser Automation? Full Guide for Beginners**
+   URL: https://www.browserless.io
+
+3. **What Is Browser Automation: A Complete Tutorial**
+   URL: https://www.lambdatest.com
+
+Is Done: True
+Successful: True
+Errors Present: False
+Steps Taken: 2
+Duration (s): 9.149003028869629
